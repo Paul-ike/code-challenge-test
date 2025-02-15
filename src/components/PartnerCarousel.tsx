@@ -2,7 +2,17 @@
 
 import React, { useState, useRef } from "react";
 
-const PartnerCarousel = ({ partners }) => {
+interface Partner {
+  imageUrl: string;
+  alt: string;
+  link: string;
+}
+
+interface PartnerCarouselProps {
+  partners: Partner[];
+}
+
+const PartnerCarousel: React.FC<PartnerCarouselProps> = ({ partners }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [buttonPosition, setButtonPosition] = useState({ x: 50, y: 50 });
