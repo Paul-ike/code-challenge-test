@@ -1,5 +1,6 @@
 import AnimatedLogos from "@/components/AnimatedLogos";
 import Hero from "@/components/Hero";
+import LabNotes from "@/components/LabNotes";
 import PartnerCarousel from "@/components/PartnerCarousel";
 import SectionTwo from "@/components/SectionTwo";
 
@@ -21,6 +22,27 @@ const partnersData = [
   },
 ];
 
+const labNotesData = [
+  {
+    imageUrl: '/images/lb1.jpg',
+    date: 'January 24, 2025',
+    title: 'What is direct air capture?',
+    link: 'https://www.missionzero.tech/learn/what-is-dac',
+  },
+  {
+    imageUrl: '/images/lb2.jpg',
+    date: 'January 10, 2025',
+    title: 'What sets DAC apart from CCS technology?',
+    link: 'https://www.missionzero.tech/learn/dac-vs-ccs',
+  },
+  {
+    imageUrl: '/images/lb3.jpg',
+    date: 'January 1, 2025',
+    title: 'Benefits of direct air capture: Why is it such a promising carbon removal tool?',
+    link: 'https://www.missionzero.tech/learn/dac-vs-ccs',
+  }
+];
+
 const Page = () => {
   return (
     <div>
@@ -28,6 +50,7 @@ const Page = () => {
       <AnimatedLogos />
       <SectionTwo />
       <PartnerCarousel partners={partnersData} />
+      <LabNotes notes={labNotesData} />
     </div>
   );
 };
