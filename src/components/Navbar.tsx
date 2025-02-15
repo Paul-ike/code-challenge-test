@@ -16,11 +16,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => { 
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
+    
 
     document.addEventListener("mousedown", handleClickOutside);
 
