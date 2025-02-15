@@ -3,6 +3,7 @@ import FirstPlant from "@/components/FirstPlant";
 import Hero from "@/components/Hero";
 import LabNotes from "@/components/LabNotes";
 import PartnerCarousel from "@/components/PartnerCarousel";
+import ReinventCarbon from "@/components/ReinventCarbon";
 import SectionTwo from "@/components/SectionTwo";
 
 const partnersData = [
@@ -53,6 +54,7 @@ const Page = () => {
       <PartnerCarousel partners={partnersData} />
       <LabNotes notes={labNotesData} />
       <FirstPlant />
+      <ReinventCarbon />
     </div>
   );
 };
