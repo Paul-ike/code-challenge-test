@@ -1,5 +1,6 @@
 import AnimatedLogos from "@/components/AnimatedLogos";
 import FirstPlant from "@/components/FirstPlant";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import LabNotes from "@/components/LabNotes";
 import PartnerCarousel from "@/components/PartnerCarousel";
@@ -55,6 +56,7 @@ const Page = () => {
       <LabNotes notes={labNotesData} />
       <FirstPlant />
       <ReinventCarbon />
+      <Footer />
     </div>
   );
 };
