@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mission Zero Technologies Website - Front-End README
 
-## Getting Started
+## Project Name
 
-First, run the development server:
+Mission Zero Technologies Website - Front-End
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Author Information
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This front-end project was created by:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Paul Ngugi.
+- Date: February 19, 2025
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup/Installation Requirements
 
-## Learn More
+1.  **Clone the Repository:**
+    ```
+    git clone git@github.com:Paul-ike/code-challenge-test.git
+    ```
+2.  **Install Dependencies:**
+    Make sure you have Node.js and npm (Node Package Manager) installed. Then, run:
+    ```
+    npm install
+    ```
+3.  **Running the Development Server:**
+    ```
+    npm run dev
+    ```
+    This will start the development server. Open your browser and navigate to `http://localhost:3000` (or the address shown in the terminal) to view the website.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is built using Next.js and Tailwind CSS. Key directories include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+*   `pages/`: Contains the Next.js pages (routes) for the application.
+*   `components/`: Contains reusable React components.
+*   `public/`: Contains static assets like images, etc.
+*   `styles/`: Contains global CSS styles (if any).
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   **React:** A JavaScript library for building user interfaces.
+*   **Next.js:** A React framework for building server-rendered and statically generated applications.
+*   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+*   **Font Awesome 6:** A library of icons and social media
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Known Issues and TODOs
+
+*   **Image Optimization:**  Image optimization is not fully implemented. Consider using Next.js's built-in Image component for better performance.
+*   **Responsiveness Testing:** Thorough testing is required across different devices and screen sizes.
+*   **Accessibility:** Accessibility features should be reviewed and implemented.
+
+## Support and Contact Information
+
+For questions or support, please contact:
+
+-   Email: paulnyouken@gmail.com
+-   Phone: +254718741382
+
+## License and Copyright Information
+
+Copyright 2025 Mission Zero Technologies.
+
+This project is open source and available under the [MIT License](LICENSE).
