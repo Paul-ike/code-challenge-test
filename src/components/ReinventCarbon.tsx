@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import Button from './Button';
 
 const ReinventCarbon = () => {
   return (
@@ -23,15 +24,7 @@ const ReinventCarbon = () => {
             We partner with pioneering CO₂ users, project developers, engineers, and scientists around the world to turn historic carbon waste into new climate value.
           </p>
           <div className="flex justify-center lg:justify-start">
-            <a
-              href="#"
-              className="bg-[#d0ff14] text-black rounded-full py-3 px-6 inline-flex items-center hover:bg-white hover:text-black transition duration-300"
-            >
-              Get in touch
-              <span className="ml-2 w-7 h-7 rounded-full bg-black inline-flex items-center justify-center">
-                <FaArrowRight className="text-white w-5 h-5" />
-              </span>
-            </a>
+            <Button text="Get in touch" href="#" />
           </div>
         </div>
       </div>

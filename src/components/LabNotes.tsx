@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import Button from "./Button";
 
 const LabNotes = ({ notes }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,15 +29,7 @@ const LabNotes = ({ notes }) => {
           <h2 className="text-black text-5xl font-bold mb-8">
             Notes on the carbon revolution
           </h2>
-          <a
-            href="#"
-            className="bg-black text-white rounded-full py-3 px-8 inline-flex items-center hover:bg-[#d0ff14]"
-          >
-            View more
-            <span className="ml-2 w-7 h-7 rounded-full bg-white inline-flex items-center justify-center">
-              <FaArrowRight className="text-black w-5 h-5" />
-            </span>
-          </a>
+          <Button text="View more" href="#" bgColor="bg-black" textColor="text-white" hoverBg="hover:bg-[#d0ff14]" hoverText="hover:text-black" />
         </div>
 
         <div className="w-full lg:w-1/2 relative overflow-hidden">

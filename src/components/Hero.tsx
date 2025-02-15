@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from "react-icons/fa6";
+import Button from './Button';
 
 const Hero = () => {
   return (
@@ -21,12 +22,7 @@ const Hero = () => {
             <p className="text-sm md:text-lg mb-8">
               We develop technology to efficiently recover CO₂ <br /> from our atmosphere — anywhere, at any scale.
             </p>
-            <button className="flex items-center bg-transparent border border-white hover:bg-white text-white font-bold py-5 px-10 rounded-full transition duration-300 hover:text-black">
-              Contact
-              <div className="ml-2 w-6 h-6 rounded-full border border-white flex items-center justify-center hover:border-black">
-                <FaArrowRight className="ml-0.5 hover:text-black" />
-              </div>
-            </button>
+            <Button text="Contact" href="#" bgColor="bg-transparent border border-white" textColor="text-white" hoverBg="hover:bg-white" hoverText="hover:text-black" />
           </div>
         </div>
       </div>

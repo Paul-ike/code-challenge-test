@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,15 +100,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center">
-          <Link
-            href="#contact"
-            className="flex items-center bg-[#d0ff14] hover:bg-gray-300 text-black font-bold py-2 px-8 rounded-full transition duration-300"
-          >
-            Contact
-            <div className="ml-2 w-8 h-8 bg-black rounded-full flex items-center justify-center">
-              <FaArrowRight className="text-white w-4 h-4" />
-            </div>
-          </Link>
+          <Button href="#contact" text="Contact" />
         </div>
 
         <div className="md:hidden">
@@ -146,14 +139,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="pb-4 px-4">
-            <Link
-              href="#contact"
-              className="w-full flex items-center justify-center bg-[#d0ff14] hover:bg-gray-300 text-black font-bold py-2 px-3 rounded-full transition duration-300"
-              onClick={toggleMenu}
-            >
-              Contact
-              <FaArrowRight className="ml-2" />
-            </Link>
+            <Button href="#contact" text="Contact" />
           </div>
         </div>
       )}

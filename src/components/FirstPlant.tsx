@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import Button from './Button';
 
 const FirstPlant = () => {
   return (
@@ -12,15 +13,7 @@ const FirstPlant = () => {
             </h2>
           </div>
           <div className="order-2 mt-6 md:mt-auto">
-            <a
-              href="https://r2.vidzflow.com/v/KuagvzoUPR_1080p_1732807499.mp4"
-              className="bg-[#d0ff14] text-black rounded-full py-3 px-6 inline-flex items-center hover:bg-white hover:text-black transition duration-300"
-            >
-              Watch video
-              <span className="ml-2 w-7 h-7 rounded-full bg-black inline-flex items-center justify-center">
-                <FaArrowRight className="text-white w-5 h-5" />
-              </span>
-            </a>
+            <Button text="Watch video" href="https://r2.vidzflow.com/v/KuagvzoUPR_1080p_1732807499.mp4" />
           </div>
         </div>
 
