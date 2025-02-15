@@ -1,14 +1,14 @@
-# Mission Zero Technologies Website - Front-End README
+# Octavia Carbon Technologies Website - Front-End README
 
 ## Project Name
 
-Mission Zero Technologies Website - Front-End
+Octavia Carbon Technologies Website - Front-End
 
 ## Author Information
 
 This front-end project was created by:
 
-- Paul Ngugi.
+- Paul Wanyoike Ngugi.
 - Date: February 19, 2025
 
 ## Setup/Installation Requirements
@@ -59,6 +59,6 @@ For questions or support, please contact:
 
 ## License and Copyright Information
 
-Copyright 2025 Mission Zero Technologies.
+Copyright 2025 Octavia Carbon Technologies.
 
 This project is open source and available under the [MIT License](LICENSE).
