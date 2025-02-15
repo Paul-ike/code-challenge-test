@@ -16,7 +16,7 @@ const PartnerCarousel: React.FC<PartnerCarouselProps> = ({ partners }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [buttonPosition, setButtonPosition] = useState({ x: 50, y: 50 });
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const nextPartner = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % partners.length);
