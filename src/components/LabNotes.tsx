@@ -16,7 +16,6 @@ const LabNotes = ({ notes }) => {
     );
   };
 
-  const currentNote = notes[currentIndex];
 
   return (
     <div className="bg-[#d0ff14] py-20">

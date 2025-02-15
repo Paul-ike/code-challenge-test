@@ -21,7 +21,7 @@ const SectionTwo = () => {
           </h2>
           <p className="text-lg mt-4">
             The CO₂ in our air can be much more than just harmful waste. In fact, it can make almost anything you can think of.
-            If we can turn the atmosphere into the world's default carbon source, we can quit fossil fuels and rebalance our climate.
+            If we can turn the atmosphere into the world&apos;s default carbon source, we can quit fossil fuels and rebalance our climate.
             At Mission Zero, we are already deploying the keystone technology for the post-fossil era.
           </p>
         </div>
