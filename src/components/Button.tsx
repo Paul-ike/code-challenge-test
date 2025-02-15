@@ -1,7 +1,27 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const Button = ({ text, href, onClick, bgColor = "bg-[#d0ff14]", textColor = "text-black", hoverBg = "hover:bg-white", hoverText = "hover:text-black", icon = true }) => {
+interface ButtonProps {
+  text: string;
+  href?: string;
+  onClick?: () => void;
+  bgColor?: string;
+  textColor?: string;
+  hoverBg?: string;
+  hoverText?: string;
+  icon?: boolean;
+}
+
+const Button: React.FC<ButtonProps> = ({
+  text,
+  href,
+  onClick,
+  bgColor = "bg-[#d0ff14]",
+  textColor = "text-black",
+  hoverBg = "hover:bg-white",
+  hoverText = "hover:text-black",
+  icon = true,
+}) => {
   return (
     <a
       href={href}

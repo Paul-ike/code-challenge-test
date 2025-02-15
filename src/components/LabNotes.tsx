@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
+
 const LabNotes = ({ notes }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
