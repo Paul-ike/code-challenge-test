@@ -4,7 +4,6 @@ import type { Config } from "tailwindcss";
 import aspectRatio from "@tailwindcss/aspect-ratio";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
-import filters from "tailwindcss-filters";
 
 const config: Config = {
   content: [
@@ -25,7 +24,6 @@ const config: Config = {
     aspectRatio,
     forms,
     typography,
-    filters,
   ],
 };
 

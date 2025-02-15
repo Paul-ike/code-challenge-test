@@ -11,7 +11,7 @@ const SectionTwo = () => {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover rounded-3xl h-[550px]"
+            className="w-full object-cover rounded-3xl h-[550px]"
           />
         </div>
 
