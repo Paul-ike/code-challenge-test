@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const mobileMenuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -43,15 +43,13 @@ const Navbar = () => {
   }, [isOpen]);
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        setIsScrolled(true);
+        setIsVisible(false);
       } else {
-        setIsScrolled(false);
+        setIsVisible(true);
       }
-      lastScrollY = window.scrollY;
+      setLastScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -59,12 +57,12 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 text-white px-6 py-4 bg-black transition-all ${
-        isScrolled ? "-top-16" : "top-0"
+      className={`fixed top-0 left-0 w-full z-50 text-white px-6 py-4 bg-black transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
