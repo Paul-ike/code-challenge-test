@@ -28,13 +28,13 @@ const PartnerCarousel: React.FC<PartnerCarouselProps> = ({ partners }) => {
     );
   };
 
-  const goToPartner = (index) => {
+  const goToPartner = (index: number) => {
     setCurrentIndex(index);
   };
 
   const currentPartner = partners[currentIndex];
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
 
     const container = containerRef.current;

@@ -33,7 +33,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    const handleEscapeKeyPress = (event) => {
+    const handleEscapeKeyPress = (event: KeyboardEvent) => {
       if (event.key === "Escape" && isOpen) {
         setIsOpen(false);
       }
