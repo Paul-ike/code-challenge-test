@@ -3,8 +3,18 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
+interface Note {
+  imageUrl: string;
+  date: string;
+  title: string;
+  link: string;
+}
 
-const LabNotes = ({ notes }) => {
+interface LabNotesProps {
+  notes: Note[];
+}
+
+const LabNotes: React.FC<LabNotesProps> = ({ notes }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextNote = () => {
